@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Tarjeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo-princ">Pague con toda confiaza sus compras</h1>
+    </header>
+
+   <table class="" >
+        <td class="form">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/07/mejor-usar-tarjeta-credito-debito-2409243.jpg" class="foto form" alt="">         
+                       
+        </td>
+        <td>
+                <form class="" action="" method="post">
+                    <div class=""><h1 class="centro">Método de pago</h1>
+                        <div class="texto centro space"> </spam >Nombre del Titular: <input type="text" id="" name=""  class="field" placeholder="Nombre del Titular"/> </spam> 
+                        <div class="space ">
+                            <spam >Fecha de Exp: <input type="text" id="" name="" size="5" maxlength="5" class="field" placeholder="00/00" /> 
+                            </spam >CVC: <input type="text" id="" name=""  size="5" maxlength="5" placeholder="000" class="field"/> 
+                        </div>
+                    </div>
+                    <div class="texto centro">
+                        <label for="numero">Numero de Tarjeta:</label>
+                        <input type="text" id="numero" name="numero" class="field" placeholder="000-0000-0000-0000"/>
+                    </div>
+                    
+                    <div class="">
+                        <input class="boton"  type=button value="Validar" onclick="ValidarTarjetaCredito()">
+                    </div>
+                    <div class="">
+                        <p class="alerta"></p>
+                    </div>
+                </form>
+
+        </td>
+   </table>
+
+   <footer >
+    <hr>
+    <div class="centro texto"><p class="center">
+        Todos los derechos reservados. 2022 International Bank</p></div>
+   </footer>
+
+    <script src="app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+$('#numero').mask('0000-0000-0000-0000');
+
+$('#numero').change(function () {
+  var valor = $(this).val();  
+  $(this).val(valor);
+});
+
+});
+</script>
+</body>
+
+</html>
