@@ -33,6 +33,19 @@ function ValidarTarjetaCredito() {
                     tarjeta["error"] = "El numero de tarjeta no debe contener el mismo digito";
                     mensaje = " ,  Erorr: " + tarjeta["error"];
             }
+            
+            <script>
+    $(document).ready(function () {
+
+$('#numero').mask('0000-0000-0000-0000');
+
+$('#numero').change(function () {
+  var valor = $(this).val();  
+  $(this).val(valor);
+});
+
+});
+</script>
 
         } else { //si no es numero
             tarjeta["error"] = "El numero de tarjeta contiene caracteres";
