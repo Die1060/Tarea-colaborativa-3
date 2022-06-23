@@ -34,7 +34,7 @@ function ValidarTarjetaCredito() {
                     mensaje = " ,  Erorr: " + tarjeta["error"];
             }
             
-            <script>
+           
     $(document).ready(function () {
 
 $('#numero').mask('0000-0000-0000-0000');
@@ -45,7 +45,7 @@ $('#numero').change(function () {
 });
 
 });
-</script>
+
 
         } else { //si no es numero
             tarjeta["error"] = "El numero de tarjeta contiene caracteres";
